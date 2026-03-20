@@ -84,16 +84,16 @@ function TextBlock({
   return (
     <motion.div
       style={{ opacity, y }}
-      className={`absolute top-1/2 -translate-y-1/2 z-20 flex flex-col max-w-sm md:max-w-md pointer-events-none ${positionClasses[section.position]}`}
+      className={`absolute top-1/2 -translate-y-1/2 z-20 flex flex-col max-w-md md:max-w-lg pointer-events-none ${positionClasses[section.position]}`}
     >
-      <span className="text-xs md:text-sm tracking-[0.35em] uppercase text-emerald-800/80 font-inter mb-3">
+      <span className="text-sm md:text-base tracking-[0.35em] uppercase text-black/50 font-inter mb-3">
         {section.subtitle}
       </span>
-      <h2 className="font-playfair text-3xl md:text-5xl lg:text-6xl text-gray-900 font-light leading-tight mb-4">
+      <h2 className="font-playfair text-4xl md:text-6xl lg:text-7xl text-black font-light leading-tight mb-4">
         {section.title}
       </h2>
-      <div className="w-12 h-[1px] bg-emerald-800/50 mb-4 mx-auto md:mx-0" />
-      <p className="text-sm md:text-base text-emerald-900/70 font-inter leading-relaxed max-w-xs md:max-w-sm">
+      <div className="w-14 h-[2px] bg-black/30 mb-5 mx-auto md:mx-0" />
+      <p className="text-base md:text-lg text-black/60 font-inter leading-relaxed max-w-sm md:max-w-md">
         {section.body}
       </p>
     </motion.div>
